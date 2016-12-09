@@ -11,7 +11,7 @@ ln -fs $BASEDIR/tmux.conf ~/.tmux.conf
 ln -fs $BASEDIR/vimrc ~/.vimrc
 
 # pathogen
-mkdir -p ~/.vim/autoload ~/.vim/bundle && curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+mkdir -p ~/.vim/autoload && curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 
 ln -fs $BASEDIR/bundle ~/.vim/
 
