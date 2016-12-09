@@ -1,6 +1,9 @@
-[submodule "bundle/lightline.vim"]
-	path = bundle/lightline.vim
+[submodule "vim/bundle/lightline.vim"]
+	path = vim/bundle/lightline.vim
 	url = https://github.com/itchyny/lightline.vim.git
-[submodule "colors/molokai"]
-	path = colors/molokai
+[submodule "vim/colors/molokai"]
+	path = vim/colors/molokai
 	url = https://github.com/tomasr/molokai.git
+[submodule "vim/vim-pathogen"]
+	path = vim/vim-pathogen
+	url = https://github.com/tpope/vim-pathogen.git

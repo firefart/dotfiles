@@ -10,11 +10,11 @@ echo "Basedir: $BASEDIR"
 ln -fs $BASEDIR/tmux.conf ~/.tmux.conf
 
 # vim
-ln -fs $BASEDIR/vimrc ~/.vimrc
+ln -fs $BASEDIR/vim/vimrc ~/.vimrc
 
 # pathogen
-mkdir -p ~/.vim/autoload && curl -LSso ~/.vim/autoload/pathogen.vim https://raw.githubusercontent.com/tpope/vim-pathogen/master/autoload/pathogen.vim
+ln -fs ln -fs $BASEDIR/vim/vim-pathogen/autoload ~/.vim/
 
-ln -fs $BASEDIR/bundle ~/.vim/
+ln -fs $BASEDIR/vim/bundle ~/.vim/
 mkdir -p ~/.vim/colors
-ln -fs $BASEDIR/colors/molokai/colors/molokai.vim ~/.vim/colors/molokai.vim
+ln -fs $BASEDIR/vim/colors/molokai/colors/molokai.vim ~/.vim/colors/molokai.vim
