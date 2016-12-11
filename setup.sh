@@ -16,11 +16,16 @@ ln -fs $BASEDIR/gitconfig ~/.gitconfig
 ln -fs $BASEDIR/tmux.conf ~/.tmux.conf
 
 # vim
+mkdir -p ~/.vim/
 ln -fs $BASEDIR/vim/vimrc ~/.vimrc
 
 # pathogen
-ln -fs ln -fs $BASEDIR/vim/plugins/vim-pathogen/autoload ~/.vim/
+ln -fs $BASEDIR/vim/plugins/vim-pathogen/autoload ~/.vim/
 
-ln -fs $BASEDIR/vim/plugins/lightline-vim ~/.vim/bundle
+# plugins
+ln -fs $BASEDIR/vim/plugins/lightline.vim ~/.vim/bundle
+ln -fs $BASEDIR/vim/plugins/supertab ~/.vim/bundle
+# http://vimawesome.com/plugin/the-nerd-commenter
+
 mkdir -p ~/.vim/colors
 ln -fs $BASEDIR/vim/colors/molokai/colors/molokai.vim ~/.vim/colors/molokai.vim
