@@ -25,7 +25,7 @@ ln -fs $BASEDIR/vim/plugins/vim-pathogen/autoload ~/.vim/
 # plugins
 ln -fs $BASEDIR/vim/plugins/lightline.vim ~/.vim/bundle
 ln -fs $BASEDIR/vim/plugins/supertab ~/.vim/bundle
-# http://vimawesome.com/plugin/the-nerd-commenter
+ln -fs $BASEDIR/vim/plugins/nerdcommenter ~/.vim/bundle
 
 mkdir -p ~/.vim/colors
 ln -fs $BASEDIR/vim/colors/molokai/colors/molokai.vim ~/.vim/colors/molokai.vim

@@ -10,3 +10,6 @@
 [submodule "vim/plugins/supertab"]
 	path = vim/plugins/supertab
 	url = https://github.com/ervandew/supertab.git
+[submodule "vim/plugins/nerdcommenter"]
+	path = vim/plugins/nerdcommenter
+	url = https://github.com/scrooloose/nerdcommenter.git
