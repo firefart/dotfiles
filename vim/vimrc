@@ -44,6 +44,12 @@ nnoremap <leader>st ^
 :map <Leader>hon :%!xxd<CR>
 :map <Leader>hoff :%!xxd -r<CR>
 
+" remap some commands because i suck at releasing shift
+:command WQ wq
+:command Wq wq
+:command W w
+:command Q q
+
 " nerdcommenter
 let g:NERDSpaceDelims = 1                 " Add spaces after comment delimiters by default
 let g:NERDCompactSexyComs = 1             " Use compact syntax for prettified multi-line comments
