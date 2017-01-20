@@ -15,6 +15,10 @@ ln -fs $BASEDIR/gitconfig ~/.gitconfig
 # tmux
 ln -fs $BASEDIR/tmux.conf ~/.tmux.conf
 
+# ssh
+mkdir -p ~/.ssh/
+ln -fs $BASEDIR/ssh_config ~/.ssh/config
+
 # vim
 rm -rf ~/.vim/
 mkdir -p ~/.vim/
