@@ -10,6 +10,6 @@
 	autocrlf = input
 [commit]
 	gpgsign = true
-[credential]
-  helper = /usr/libexec/git-core/git-credential-gnome-keyring
 
+[credential]
+	helper = /usr/libexec/git-core/git-credential-gnome-keyring
