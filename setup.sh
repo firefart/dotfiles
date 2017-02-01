@@ -29,10 +29,8 @@ ln -fs $BASEDIR/vim/vimrc ~/.vimrc
 ln -fs $BASEDIR/vim/plugins/vim-pathogen/autoload ~/.vim/
 
 # plugins
-ln -fs $BASEDIR/vim/plugins/lightline.vim ~/.vim/bundle/
-ln -fs $BASEDIR/vim/plugins/supertab ~/.vim/bundle/
-ln -fs $BASEDIR/vim/plugins/nerdcommenter ~/.vim/bundle/
-ln -fs $BASEDIR/vim/plugins/nerdtree ~/.vim/bundle/
+rm -rf ~/.vim/bundle
+ln -fs $BASEDIR/vim/plugins/ ~/.vim/bundle
 
 # colors
 mkdir -p ~/.vim/colors

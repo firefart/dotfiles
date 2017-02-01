@@ -63,3 +63,7 @@ let g:NERDTrimTrailingWhitespace = 1      " Enable trimming of trailing whitespa
 " nerdtree
 map <C-n> :NERDTreeToggle<CR>
 
+" CtrlP
+let g:ctrlp_map = '<C-p>'
+let g:ctrlp_cmd = 'CtrlP'
+
