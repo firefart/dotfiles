@@ -1,6 +1,9 @@
 execute pathogen#infect()
 syntax on
 filetype plugin indent on
+
+" colors
+set t_Co=256                              " use 256 colors in terminal
 color molokai
 
 " Use case insensitive search, except when using capital letters
@@ -56,3 +59,7 @@ let g:NERDCompactSexyComs = 1             " Use compact syntax for prettified mu
 let g:NERDDefaultAlign = 'left'           " Align line-wise comment delimiters flush left instead of following code indentation
 let g:NERDCommentEmptyLines = 1           " Allow commenting and inverting empty lines (useful when commenting a region)
 let g:NERDTrimTrailingWhitespace = 1      " Enable trimming of trailing whitespace when uncommenting
+
+" nerdtree
+map <C-n> :NERDTreeToggle<CR>
+

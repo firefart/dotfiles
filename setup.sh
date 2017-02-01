@@ -32,6 +32,8 @@ ln -fs $BASEDIR/vim/plugins/vim-pathogen/autoload ~/.vim/
 ln -fs $BASEDIR/vim/plugins/lightline.vim ~/.vim/bundle/
 ln -fs $BASEDIR/vim/plugins/supertab ~/.vim/bundle/
 ln -fs $BASEDIR/vim/plugins/nerdcommenter ~/.vim/bundle/
+ln -fs $BASEDIR/vim/plugins/nerdtree ~/.vim/bundle/
 
+# colors
 mkdir -p ~/.vim/colors
 ln -fs $BASEDIR/vim/colors/molokai/colors/molokai.vim ~/.vim/colors/molokai.vim
