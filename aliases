@@ -6,4 +6,5 @@ alias animus="ssh root@git.wpscan.org"
 alias pfsense="ssh root@10.0.0.1"
 alias pi="ssh -p 9988 root@192.168.50.10"
 alias kali="ssh root@192.168.56.3"
+alias nas="ssh admin@10.0.0.3"
 
