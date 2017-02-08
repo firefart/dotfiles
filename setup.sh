@@ -35,3 +35,13 @@ ln -fs $BASEDIR/vim/plugins/ ~/.vim/bundle
 # colors
 mkdir -p ~/.vim/colors
 ln -fs $BASEDIR/vim/colors/molokai/colors/molokai.vim ~/.vim/colors/molokai.vim
+
+# powerline
+cd $BASEDIR/powerline-shell
+./install.py
+ln -fs $BASEDIR/powerline-shell/powerline-shell.py ~/.powerline-shell.py
+
+# bash
+ln -fs $BASEDIR/aliases ~/.bash_aliases
+ln -fs $BASEDIR/bashrc ~/.bashrc
+
