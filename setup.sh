@@ -19,6 +19,10 @@ ln -fs $BASEDIR/tmux.conf ~/.tmux.conf
 mkdir -p ~/.ssh/
 ln -fs $BASEDIR/ssh_config ~/.ssh/config
 
+# bin
+mkdir -p ~/bin/
+ln -fs $BASEDIR/bin/* ~/bin/
+
 # vim
 rm -rf ~/.vim/
 mkdir -p ~/.vim/
@@ -44,4 +48,8 @@ ln -fs $BASEDIR/powerline-shell/powerline-shell.py ~/.powerline-shell.py
 # bash
 ln -fs $BASEDIR/aliases ~/.bash_aliases
 ln -fs $BASEDIR/bashrc ~/.bashrc
+
+# i3
+mkdir -p ~/.config/i3/
+ln -fs $BASEDIR/i3config ~/.config/i3/config
 
