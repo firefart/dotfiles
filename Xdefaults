@@ -1,5 +1,4 @@
 URxvt*termName: rxvt-256color
-! URxvt*background: #2B2B2B
 URxvt*background: #23272A
 URxvt*foreground: #DEDEDE
 URxvt*font: xft:Droid Sans Mono for Powerline:pixelsize=17:antialiasing=true:hinting=true
