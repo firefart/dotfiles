@@ -53,3 +53,6 @@ ln -fs $BASEDIR/bashrc ~/.bashrc
 mkdir -p ~/.config/i3/
 ln -fs $BASEDIR/i3config ~/.config/i3/config
 
+# urxvt
+ln -fs $BASEDIR/Xdefaults ~/.Xdefaults
+

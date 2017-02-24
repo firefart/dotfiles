@@ -5,11 +5,6 @@ if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
 
-# Uncomment the following line if you don't like systemctl's auto-paging feature:
-# export SYSTEMD_PAGER=
-
-# User specific aliases and functions
-
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 ################# SSH-ADD #####################
@@ -40,6 +35,28 @@ else
 fi
 ##############################################
 
+source ~/.bash_aliases
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+######################## Set urxvt window title ########################
+
+case "$TERM" in
+  xterm*|rxvt*)
+    if [ -e /etc/sysconfig/bash-prompt-xterm ]; then
+      PROMPT_COMMAND=/etc/sysconfig/bash-prompt-xterm
+    elif [ "${VTE_VERSION:-0}" -ge 3405 ]; then
+      PROMPT_COMMAND="__vte_prompt_command"
+    else
+      PROMPT_COMMAND='printf "\033]0;%s@%s:%s\007" "${USER}" "${HOSTNAME%%.*}" "${PWD/#$HOME/\~}"'
+    fi
+    ;;
+  *)
+    ;;
+esac
+
+#######################################################################
+
 ############## powerline-shell ###############
 
 function _update_ps1() {
@@ -51,8 +68,4 @@ if [ "$TERM" != "linux" ]; then
 fi
 
 ##############################################
-
-source ~/.bash_aliases
-
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 

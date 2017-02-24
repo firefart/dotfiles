@@ -32,7 +32,7 @@ font pango:DejaVu Sans Mono 10
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec gnome-terminal
+bindsym $mod+Return exec urxvt256c-ml
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -145,4 +145,6 @@ exec --no-startup-id env WINEPREFIX="/home/firefart/.wine" wine "/home/firefart/
 
 # lock screen
 bindsym $mod+l exec --no-startup-id /home/firefart/bin/lockscreen
+
+bindsym Print exec scrot -e 'mv $f /tmp/ && gimp /tmp/$f && rm -f /tmp/$f'
 
