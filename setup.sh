@@ -55,4 +55,6 @@ ln -fs $BASEDIR/i3config ~/.config/i3/config
 
 # urxvt
 ln -fs $BASEDIR/Xdefaults ~/.Xdefaults
+mkdir -p ~/.urxvt/ext/
+ln -fs $BASEDIR/urxvt-perls/deprecated/clipboard ~/.urxvt/ext/clipboard
 

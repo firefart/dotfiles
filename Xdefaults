@@ -9,7 +9,8 @@ URxvt*scrollBar: false
 URxvt*scrollstyle: rxvt
 
 URxvt*perl-ext-common: default,matcher,clipboard
-URxvt.keysym.Shift-Control-V: perl:clipboard:paste
+URxvt*keysym.Shift-Control-V: perl:clipboard:paste
+URxvt*keysym.Shift-Control-C: perl:clipboard:copy
 URxvt*urlLauncher: chrome
 URxvt*matcher.button: 1
 URxvt*colorUL: #86a2be
