@@ -141,6 +141,7 @@ bar {
 
 # autostart
 exec --no-startup-id dropbox start
+exec --no-startup-id env WINEPREFIX="/home/firefart/.wine" wine "/home/firefart/.wine/drive_c/Program Files (x86)/1Password 4/Agile1pAgent.exe"
 
 # lock screen
 bindsym $mod+l exec --no-startup-id /home/firefart/bin/lockscreen
