@@ -50,8 +50,12 @@ ln -fs $BASEDIR/aliases ~/.bash_aliases
 ln -fs $BASEDIR/bashrc ~/.bashrc
 
 # i3
-mkdir -p ~/.config/i3/
+mkdir -p ~/.config/i3
 ln -fs $BASEDIR/i3config ~/.config/i3/config
+
+# i3status
+mkdir -p ~/.config/i3status
+ln -fs $BASEDIR/i3status.conf ~/.config/i3status/config
 
 # urxvt
 ln -fs $BASEDIR/Xdefaults ~/.Xdefaults
