@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# 5 minutes
+time=300
+
+while true
+do
+  feh --randomize --bg-fill /mnt/misc/pictures/girls/*
+  sleep $time
+done
+
