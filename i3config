@@ -147,5 +147,11 @@ exec --no-startup-id "/home/firefart/bin/slideshow"
 # lock screen
 bindsym $mod+l exec --no-startup-id /home/firefart/bin/lockscreen
 
+# screenshot
 bindsym Print exec scrot -e 'mv $f /tmp/ && gimp /tmp/$f && rm -f /tmp/$f'
+
+# Pulse Audio controls
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 2 +5%
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 2 -5%
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 2 toggle
 
