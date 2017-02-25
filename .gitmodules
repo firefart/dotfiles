@@ -25,3 +25,6 @@
 [submodule "urxvt-perls"]
 	path = urxvt-perls
 	url = https://github.com/muennich/urxvt-perls.git
+[submodule "powerline-fonts"]
+	path = powerline-fonts
+	url = https://github.com/powerline/fonts.git
