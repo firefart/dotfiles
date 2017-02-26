@@ -142,10 +142,10 @@ bar {
 # autostart
 exec --no-startup-id dropbox start
 exec --no-startup-id env WINEPREFIX="/home/firefart/.wine" wine "/home/firefart/.wine/drive_c/Program Files (x86)/1Password 4/Agile1pAgent.exe"
-exec --no-startup-id "/home/firefart/bin/slideshow"
+exec --no-startup-id "/home/firefart/.local/bin/slideshow"
 
 # lock screen
-bindsym $mod+l exec --no-startup-id /home/firefart/bin/lockscreen
+bindsym $mod+l exec --no-startup-id "/home/firefart/.local/bin/lockscreen"
 
 # screenshot
 bindsym Print exec scrot -e 'mv $f /tmp/ && gimp /tmp/$f && rm -f /tmp/$f'
