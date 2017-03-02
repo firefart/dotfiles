@@ -5,8 +5,6 @@ if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
 
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-
 ################# SSH-ADD #####################
 # http://mah.everybody.org/docs/ssh
 SSH_ENV="$HOME/.ssh/environment"
@@ -36,8 +34,6 @@ fi
 ##############################################
 
 source ~/.bash_aliases
-
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 ######################## Set urxvt window title ########################
 

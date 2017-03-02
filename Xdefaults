@@ -23,6 +23,9 @@ URxvt*scrollTtyKeypress: true
 
 URxvt*iso14755: false
 
+! delimiters for double-click selection
+URxvt*cutchars: BACKSLASH '"'&()*,;:<=>?@[]^{|}
+
 ! black
 URxvt*color0  : #2E3436
 URxvt*color8  : #555753
