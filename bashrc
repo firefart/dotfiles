@@ -5,6 +5,10 @@ if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
 
+################# disable caps lock ######################
+[[ ! -z "$DISPLAY" ]] && setxkbmap -option caps:none
+##########################################################
+
 ################# SSH-ADD #####################
 # http://mah.everybody.org/docs/ssh
 SSH_ENV="$HOME/.ssh/environment"
