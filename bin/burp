@@ -1,0 +1,4 @@
+#!/bin/bash
+
+java -Xmx12g -Xms12g -XX:+UseG1GC -jar ~/hacking/burp/burpsuite_pro_v1.7.19.jar
+
