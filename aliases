@@ -1,12 +1,4 @@
 alias grep="grep --color=auto"
-alias work="ssh -p 9989 root@work.firefart.at"
-alias firefart="ssh -p 9988 root@firefart.at"
-alias wpvulndb="ssh -p 9988 root@ssh.wpvulndb.com"
-alias animus="ssh root@git.wpscan.org"
-alias pfsense="ssh root@10.0.0.1"
-alias pi="ssh -p 9988 root@192.168.50.10"
-alias kali="ssh root@192.168.56.3"
-alias nas="ssh admin@10.0.0.3"
 alias wake_nas="sudo ether-wake -i $(route | grep '^default' | grep -o '[^ ]*$') -D 00:11:32:14:87:ee"
 alias ccat="pygmentize -O bg=dark,style=colorful"
 

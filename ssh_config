@@ -1,3 +1,38 @@
+Host firefart
+  HostName firefart.at
+  User root
+  Port 9988
+
+Host work
+  HostName work.firefart.at
+  User root
+  Port 9989
+
+Host wpvulndb
+  HostName ssh.wpvulndb.com
+  User root
+  Port 9988
+
+Host animus
+  HostName git.wpscan.org
+  User root
+  Port 22
+
+Host pfsense
+  HostName 10.0.0.1
+  User root
+  Port 22
+
+Host nas
+  HostName 10.0.0.3
+  User admin
+  Port 22
+
+Host kali
+  HostName 192.168.56.3
+  User root
+  Port 22
+
 Host 192.168.*
   StrictHostKeyChecking no
   UserKnownHostsFile=/dev/null
