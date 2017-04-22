@@ -31,5 +31,3 @@ ln -fs $BASEDIR/vim/colors/molokai/colors/molokai.vim ~/.vim/colors/molokai.vim
 
 # bash
 ln -fs $BASEDIR/aliases ~/.bash_aliases
-# ln -fs $BASEDIR/bashrc ~/.bashrc
-
