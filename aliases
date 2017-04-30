@@ -1,4 +1,4 @@
 alias grep="grep --color=auto"
 alias wake_nas="sudo ether-wake -i $(route | grep '^default' | grep -o '[^ ]*$') -D 00:11:32:14:87:ee"
 alias ccat="pygmentize -O bg=dark,style=colorful"
-
+alias files_created_today='find . -daystart -ctime 0 -print'
