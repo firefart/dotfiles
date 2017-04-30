@@ -29,5 +29,9 @@ ln -fs $BASEDIR/vim/plugins/ ~/.vim/bundle
 mkdir -p ~/.vim/colors
 ln -fs $BASEDIR/vim/colors/molokai/colors/molokai.vim ~/.vim/colors/molokai.vim
 
+# ssh
+mkdir -p ~/.ssh/
+ln -fs $BASEDIR/ssh_config ~/.ssh/config
+
 # bash
 ln -fs $BASEDIR/aliases ~/.bash_aliases
