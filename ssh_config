@@ -33,6 +33,11 @@ Host kali
   User root
   Port 22
 
+Host linux
+  HostName 10.0.0.19
+  User firefart
+  Port 22
+
 Host switch
   HostName 10.0.0.16
   User admin
