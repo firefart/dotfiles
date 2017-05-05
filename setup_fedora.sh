@@ -20,7 +20,7 @@ mkdir -p ~/.ssh/
 ln -fs $BASEDIR/ssh_config ~/.ssh/config
 
 # bin
-rm -rf ~/.local/bin/
+rm -rf ~/.local/bin
 ln -fs $BASEDIR/bin/ ~/.local/bin
 
 # vim
