@@ -31,3 +31,6 @@
 [submodule "vim/plugins/vim-buffergator"]
 	path = vim/plugins/vim-buffergator
 	url = https://github.com/jeetsukumaran/vim-buffergator.git
+[submodule "vim/plugins/nerdtree"]
+	path = vim/plugins/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
