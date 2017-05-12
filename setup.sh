@@ -33,5 +33,5 @@ ln -fs $BASEDIR/vim/colors/molokai/colors/molokai.vim ~/.vim/colors/molokai.vim
 mkdir -p ~/.ssh/
 ln -fs $BASEDIR/ssh_config ~/.ssh/config
 
-# bash
-ln -fs $BASEDIR/aliases ~/.bash_aliases
+# curl
+ln -fs $BASEDIR/curlrc ~/.curlrc

@@ -70,3 +70,16 @@ fi
 ##############################################
 
 export EDITOR=vim
+
+## 'less' with syntax highlighting
+function less_highlight() {
+  case ${@} in
+  *.html|*.css|*.tex|*.c|*.cpp|*.py|*.rb|*.php|*.lua|*.sh|*.bash|*.zsh|\
+  *.rs|*.ocaml|*.md|*.swift|*.go|*.asm|*.h|*.hpp|*.r|*.m|*.rst|*.pl)
+    LESS=" -RN" LESSOPEN="| highlight %s --out-format xterm256 --quiet \
+      --force --style solarized-dark " less ${@}
+  ;;
+  *) less ${@} ;;
+  esac
+};
+alias less='eval less_highlight'

@@ -70,3 +70,5 @@ ln -fs $BASEDIR/Xdefaults ~/.Xdefaults
 mkdir -p ~/.urxvt/ext/
 ln -fs $BASEDIR/urxvt-perls/deprecated/clipboard ~/.urxvt/ext/clipboard
 
+# curl
+ln -fs $BASEDIR/curlrc ~/.curlrc
