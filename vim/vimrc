@@ -72,3 +72,6 @@ let g:ctrlp_cmd = 'CtrlP'
 
 set listchars=nbsp:¬,eol:¶,tab:>-,extends:»,precedes:«,trail:•
 set list
+
+" make ctrl+v work
+vmap <C-C> "+y
