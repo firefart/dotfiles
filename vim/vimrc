@@ -69,3 +69,6 @@ map <C-n> :NERDTreeTabsToggle<CR>
 " CtrlP
 let g:ctrlp_map = '<C-p>'
 let g:ctrlp_cmd = 'CtrlP'
+
+set listchars=nbsp:¬,eol:¶,tab:>-,extends:»,precedes:«,trail:•
+set list
