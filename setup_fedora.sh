@@ -8,8 +8,6 @@ echo "Basedir: $BASEDIR"
 
 git submodule init
 
-git submodule update --recursive --remote
-
 # git
 ln -fs $BASEDIR/gitconfig ~/.gitconfig
 

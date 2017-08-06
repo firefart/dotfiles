@@ -7,7 +7,6 @@ BASEDIR=${BASEDIR%/}
 echo "Basedir: $BASEDIR"
 
 git submodule init
-git submodule update --recursive --remote
 
 # tmux
 ln -fs $BASEDIR/tmux.conf ~/.tmux.conf

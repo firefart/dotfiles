@@ -29,7 +29,7 @@ Host nas
   Port 22
 
 Host kali
-  HostName 192.168.56.3
+  HostName 192.168.56.4
   User root
   Port 22
 
