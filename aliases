@@ -3,3 +3,4 @@ alias grep="grep --color=auto"
 alias wake_nas="sudo ether-wake -i \$(route | grep '^default' | grep -o '[^ ]*$') -D 00:11:32:14:87:ee"
 alias ccat="pygmentize -O bg=dark,style=colorful"
 alias files_created_today='find . -daystart -ctime 0 -print'
+alias weechat='SESSIONNAME="weechat" && (tmux attach-session -t $SESSIONNAME || tmux new-session -s $SESSIONNAME /usr/bin/weechat)'
