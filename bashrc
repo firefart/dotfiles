@@ -83,3 +83,6 @@ function less_highlight() {
   esac
 };
 alias less='eval less_highlight'
+
+# favorite our own path
+PATH="~/.local/bin:$PATH"

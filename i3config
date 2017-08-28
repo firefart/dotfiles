@@ -140,7 +140,7 @@ bar {
 }
 
 # autostart
-exec --no-startup-id /opt/Enpass/runenpass.sh startWithTray
+exec --no-startup-id "/opt/Enpass/runenpass.sh startWithTray"
 exec --no-startup-id "/home/firefart/.local/bin/slideshow"
 exec --no-startup-id "/usr/bin/numlockx on"
 
