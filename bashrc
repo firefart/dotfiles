@@ -60,7 +60,7 @@ esac
 ############## powerline-shell ###############
 
 function _update_ps1() {
-    PS1="$(~/.powerline-shell.py $? 2> /dev/null)"
+    PS1="$(powerline-shell $?)"
 }
 
 if [ "$TERM" != "linux" ]; then

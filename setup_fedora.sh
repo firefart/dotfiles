@@ -41,7 +41,7 @@ ln -fs $BASEDIR/vim/colors/molokai/colors/molokai.vim ~/.vim/colors/molokai.vim
 
 # powerline
 cd $BASEDIR/powerline-shell
-./install.py
+python ./setup.py install --user
 ln -fs $BASEDIR/powerline-shell/powerline-shell.py ~/.powerline-shell.py
 
 # powerline fonts
