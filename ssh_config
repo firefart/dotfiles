@@ -38,6 +38,11 @@ Host linux
   User firefart
   Port 22
 
+Host home
+  HostName home.firefart.at
+  User firefart
+  Port 1337
+
 Host switch
   HostName 10.0.0.16
   User admin
