@@ -34,3 +34,6 @@ ln -fs $BASEDIR/ssh_config ~/.ssh/config
 
 # curl
 ln -fs $BASEDIR/curlrc ~/.curlrc
+
+# inputrc
+ln -fs $BASEDIR/inputrc ~/.inputrc

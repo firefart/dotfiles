@@ -70,3 +70,6 @@ ln -fs $BASEDIR/urxvt-perls/deprecated/clipboard ~/.urxvt/ext/clipboard
 
 # curl
 ln -fs $BASEDIR/curlrc ~/.curlrc
+
+# inputrc
+ln -fs $BASEDIR/inputrc ~/.inputrc
