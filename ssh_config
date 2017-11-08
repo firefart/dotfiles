@@ -8,6 +8,11 @@ Host work
   User root
   Port 9989
 
+Host work2
+  HostName work2.firefart.at
+  User root
+  Port 9988
+
 Host wpvulndb
   HostName ssh.wpvulndb.com
   User root
