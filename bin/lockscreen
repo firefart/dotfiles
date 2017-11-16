@@ -1,9 +1,13 @@
-#!/bin/sh
-revert() {
-  xset dpms 0 0 0
-}
-trap revert SIGHUP SIGINT SIGTERM
-xset +dpms dpms 5 5 5
-i3lock -n
-revert
+#!/bin/bash
 
+icon=$HOME/.xlock/lock.png
+image=/tmp/screen.png
+
+# make screenshot
+scrot "$image"
+convert "$image" -scale 10% -scale 1000% "$image"
+# add lock icon
+convert "$image" "$icon" -gravity center -composite -matte "$image"
+# lock screen
+i3lock -e -u -i "$image"
+rm /tmp/screen.png

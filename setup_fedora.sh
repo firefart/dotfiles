@@ -63,6 +63,10 @@ ln -fs $BASEDIR/i3config ~/.config/i3/config
 mkdir -p ~/.config/i3status
 ln -fs $BASEDIR/i3status.conf ~/.config/i3status/config
 
+# lockscreen
+mkdir -p ~/.xlock/
+ln -fs $BASEDIR/lock.png ~/.xlock/lock.png
+
 # urxvt
 ln -fs $BASEDIR/Xdefaults ~/.Xdefaults
 mkdir -p ~/.urxvt/ext/
