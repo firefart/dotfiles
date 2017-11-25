@@ -48,12 +48,20 @@ Host home
   User firefart
   Port 1337
 
+Host cloudkey
+  HostName 10.0.0.27
+  User ubnt
+  Port 22
+
 Host switch
   HostName 10.0.0.16
   User admin
   Port 22
-  KexAlgorithms +diffie-hellman-group1-sha1
-  HostKeyAlgorithms +ssh-dss
+
+Host ap
+  HostName 10.0.0.22
+  User admin
+  Port 22
 
 Host 192.168.*
   StrictHostKeyChecking no
