@@ -17,6 +17,8 @@ ln -fs $BASEDIR/tmux.conf ~/.tmux.conf
 # ssh
 mkdir -p ~/.ssh/
 ln -fs $BASEDIR/ssh_config ~/.ssh/config
+chmod 600 ~/.ssh/config
+chown $USER ~/.ssh/config
 
 # bin
 rm -rf ~/.local/bin

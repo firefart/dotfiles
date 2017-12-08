@@ -31,6 +31,8 @@ ln -fs $BASEDIR/vim/colors/molokai/colors/molokai.vim ~/.vim/colors/molokai.vim
 # ssh
 mkdir -p ~/.ssh/
 ln -fs $BASEDIR/ssh_config ~/.ssh/config
+chmod 600 ~/.ssh/config
+chown $USER ~/.ssh/config
 
 # curl
 ln -fs $BASEDIR/curlrc ~/.curlrc
