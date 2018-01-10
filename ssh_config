@@ -58,6 +58,11 @@ Host linux
   User firefart
   Port 22
 
+Host pi
+  HostName 10.0.0.22
+  User pi
+  Port 22
+
 Host kali
   HostName 192.168.56.4
   User root
