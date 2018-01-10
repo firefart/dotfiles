@@ -13,6 +13,11 @@ Host work2
   User root
   Port 9988
 
+Host home
+  HostName home.firefart.at
+  User firefart
+  Port 1337
+
 Host wpvulndb
   HostName ssh.wpvulndb.com
   User root
@@ -28,39 +33,34 @@ Host pfsense
   User root
   Port 22
 
-Host nas
+Host switch
+  HostName 10.0.0.2
+  User admin
+  Port 22
+
+Host ap
   HostName 10.0.0.3
   User admin
+  Port 22
+
+Host cloudkey
+  HostName 10.0.0.4
+  User ubnt
+  Port 22
+
+Host nas
+  HostName 10.0.0.5
+  User admin
+  Port 22
+
+Host linux
+  HostName 10.0.0.10
+  User firefart
   Port 22
 
 Host kali
   HostName 192.168.56.4
   User root
-  Port 22
-
-Host linux
-  HostName 10.0.0.19
-  User firefart
-  Port 22
-
-Host home
-  HostName home.firefart.at
-  User firefart
-  Port 1337
-
-Host cloudkey
-  HostName 10.0.0.27
-  User ubnt
-  Port 22
-
-Host switch
-  HostName 10.0.0.16
-  User admin
-  Port 22
-
-Host ap
-  HostName 10.0.0.22
-  User admin
   Port 22
 
 Host 192.168.*
