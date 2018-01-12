@@ -79,3 +79,8 @@ ln -fs $BASEDIR/curlrc ~/.curlrc
 
 # inputrc
 ln -fs $BASEDIR/inputrc ~/.inputrc
+
+# systemfiles
+sudo cp $BASEDIR/system_files/sudoers /etc/sudoers
+sudo chown root:root /etc/sudoers
+sudo chmod 0440 /etc/sudoers
