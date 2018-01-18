@@ -27,15 +27,12 @@ ln -fs $BASEDIR/bin/ ~/.local/bin
 # vim
 rm -rf ~/.vim/
 mkdir -p ~/.vim/
-mkdir -p ~/.vim/bundle/
+mkdir -p ~/.vim/pack/plugins
 ln -fs $BASEDIR/vim/vimrc ~/.vimrc
-
-# pathogen
-ln -fs $BASEDIR/vim/plugins/vim-pathogen/autoload ~/.vim/
 
 # plugins
 rm -rf ~/.vim/bundle
-ln -fs $BASEDIR/vim/plugins/ ~/.vim/bundle
+ln -fs $BASEDIR/vim/plugins/ ~/.vim/pack/plugins/start
 
 # colors
 mkdir -p ~/.vim/colors

@@ -4,9 +4,6 @@
 [submodule "vim/plugins/lightline.vim"]
 	path = vim/plugins/lightline.vim
 	url = https://github.com/itchyny/lightline.vim.git
-[submodule "vim/plugins/vim-pathogen"]
-	path = vim/plugins/vim-pathogen
-	url = https://github.com/tpope/vim-pathogen.git
 [submodule "vim/plugins/supertab"]
 	path = vim/plugins/supertab
 	url = https://github.com/ervandew/supertab.git
