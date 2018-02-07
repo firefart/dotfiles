@@ -1,3 +1,4 @@
 #!/bin/sh
 
 sudo grub2-reboot 'Windows Boot Manager (on /dev/sdb2)'
+sudo reboot
