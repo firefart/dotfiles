@@ -1,0 +1,3 @@
+#!/bin/sh
+
+grub-reboot 'Windows Boot Manager (on /dev/sdb2)'
