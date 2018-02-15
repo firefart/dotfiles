@@ -77,6 +77,11 @@ ln -fs $BASEDIR/curlrc ~/.curlrc
 # inputrc
 ln -fs $BASEDIR/inputrc ~/.inputrc
 
+# monitor config
+ln -fs $BASEDIR/monitors.xml ~/.config/monitors.xml
+sudo cp $BASEDIR/monitors.xml /var/lib/gdm/.config/monitors.xml
+sudo chown gdm:gdm /var/lib/gdm/.config/monitors.xml
+
 # systemfiles
 sudo cp $BASEDIR/system_files/sudoers /etc/sudoers
 sudo chown root:root /etc/sudoers
