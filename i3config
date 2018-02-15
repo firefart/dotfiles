@@ -141,7 +141,7 @@ bar {
 
 # autostart
 # generated with arandr
-exec --no-startup-id "/usr/bin/xrandr --output DVI-D-0 --off --output HDMI-0 --off --output DP-5 --off --output DP-4 --primary --mode 2560x1440 --pos 1920x0 --rotate normal --output DP-3 --mode 1920x1080 --pos 4480x0 --rotate normal --output DP-2 --off --output DP-1 --mode 1920x1080 --pos 0x0 --rotate normal --output DP-0 --off"
+exec --no-startup-id "/usr/bin/xrandr --output DVI-D-0 --off --output HDMI-0 --off --output DP-5 --off --output DP-4 --primary --mode 2560x1440 --rate 144 --pos 1920x0 --rotate normal --output DP-3 --mode 1920x1080 --pos 4480x0 --rotate normal --output DP-2 --off --output DP-1 --mode 1920x1080 --pos 0x0 --rotate normal --output DP-0 --off"
 exec --no-startup-id "/opt/Enpass/runenpass.sh startWithTray"
 exec --no-startup-id "/home/firefart/.local/bin/slideshow"
 exec --no-startup-id "/usr/bin/numlockx on"
