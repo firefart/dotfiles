@@ -43,8 +43,9 @@ cd $BASEDIR/powerline-shell
 python ./setup.py install --user
 
 # powerline fonts
+cd $BASEDIR/powerline-fonts
 mkdir -p ~/.local/share/fonts
-ln -fs "$BASEDIR/powerline-fonts/DroidSansMono/Droid Sans Mono for Powerline.otf" ~/.local/share/fonts/
+./install.sh
 if command -v fc-cache @>/dev/null ; then
   echo "Resetting font cache, this may take a moment..."
   fc-cache -f ~/.local/share/fonts
