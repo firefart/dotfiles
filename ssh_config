@@ -19,7 +19,7 @@ Host wpvulndb
   Port 9988
 
 Host wpscan
-  HostName wpscan
+  HostName wpscan.io
   User root
   Port 9988
 
