@@ -13,13 +13,13 @@ Host work2
   User root
   Port 9988
 
-Host home
-  HostName home.firefart.at
-  User firefart
-  Port 1337
-
 Host wpvulndb
   HostName ssh.wpvulndb.com
+  User root
+  Port 9988
+
+Host wpscan
+  HostName wpscan
   User root
   Port 9988
 
@@ -51,16 +51,6 @@ Host cloudkey
 Host nas
   HostName 10.0.0.5
   User admin
-  Port 22
-
-Host linux
-  HostName 10.0.0.10
-  User firefart
-  Port 22
-
-Host pi
-  HostName 10.0.0.22
-  User pi
   Port 22
 
 Host kali
