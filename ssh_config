@@ -21,15 +21,20 @@ Host work2
 Host wpvulndb
   HostName ssh.wpvulndb.com
   User root
-  Port 9988
+  Port 22
 
 Host wpscan
-  HostName wpscan.io
+  HostName ssh.wpscan.io
   User root
   Port 9988
 
 Host animus
   HostName git.wpscan.org
+  User root
+  Port 22
+
+Host runner
+  Hostname runner.git.wpscan.org
   User root
   Port 22
 
