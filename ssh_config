@@ -18,6 +18,11 @@ Host work2
   User root
   Port 9988
 
+Host bugbounty
+  Hostname bugbounty.firefart.at
+  User ubuntu
+  Port 22
+
 Host wpvulndb
   HostName ssh.wpvulndb.com
   User root
