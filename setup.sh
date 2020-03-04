@@ -1,6 +1,8 @@
 #!/bin/bash
 
-BASEDIR=$(cd $(dirname "$1") && pwd -P)/$(basename "$1")
+set -eu -o pipefail
+
+BASEDIR=$(pwd)
 # remove slash
 BASEDIR=${BASEDIR%/}
 
@@ -9,30 +11,36 @@ echo "Basedir: $BASEDIR"
 git submodule update --init --recursive
 
 # tmux
-ln -fs $BASEDIR/tmux.conf ~/.tmux.conf
+if [ -d "${HOME}/.tmux" ]; then
+  git -C "${HOME}/.tmux/" pull -q
+else
+  git clone https://github.com/gpakosz/.tmux.git "${HOME}/.tmux"
+fi
+ln -s -f "${HOME}/.tmux/.tmux.conf" "${HOME}/.tmux.conf"
+cp "${HOME}/.tmux/.tmux.conf.local" "${HOME}/.tmux.conf.local"
 
 # vim
-rm -rf ~/.vim/
-mkdir -p ~/.vim/
-mkdir -p ~/.vim/pack/plugins
-ln -fs $BASEDIR/vim/vimrc ~/.vimrc
+rm -rf "${HOME}/.vim/"
+mkdir -p "${HOME}/.vim/"
+mkdir -p "${HOME}/.vim/pack/plugins"
+ln -fs "$BASEDIR/vim/vimrc" "${HOME}/.vimrc"
 
 # plugins
-rm -rf ~/.vim/bundle
-ln -fs $BASEDIR/vim/plugins/ ~/.vim/pack/plugins/start
+rm -rf "${HOME}/.vim/bundle"
+ln -fs "$BASEDIR/vim/plugins/" "${HOME}/.vim/pack/plugins/start"
 
 # colors
-mkdir -p ~/.vim/colors
-ln -fs $BASEDIR/vim/colors/molokai/colors/molokai.vim ~/.vim/colors/molokai.vim
+mkdir -p "${HOME}/.vim/colors"
+ln -fs "$BASEDIR/vim/colors/molokai/colors/molokai.vim" "${HOME}/.vim/colors/molokai.vim"
 
 # ssh
-mkdir -p ~/.ssh/
-ln -fs $BASEDIR/ssh_config ~/.ssh/config
-chmod 600 ~/.ssh/config
-chown $USER ~/.ssh/config
+mkdir -p "${HOME}/.ssh/"
+ln -fs "$BASEDIR/ssh_config" "${HOME}/.ssh/config"
+chmod 600 "${HOME}/.ssh/config"
+chown $USER "${HOME}/.ssh/config"
 
 # curl
-ln -fs $BASEDIR/curlrc ~/.curlrc
+ln -fs "$BASEDIR/curlrc" "${HOME}/.curlrc"
 
 # inputrc
-ln -fs $BASEDIR/inputrc ~/.inputrc
+ln -fs "$BASEDIR/inputrc" "${HOME}/.inputrc"
