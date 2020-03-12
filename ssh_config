@@ -1,7 +1,7 @@
 Host *
   AddKeysToAgent yes
-  #IdentityFile ~/.ssh/id_ed25519
-  IdentityFile ~/.ssh/id_rsa
+  IdentityFile ~/.ssh/id_ed25519
+  #IdentityFile ~/.ssh/id_rsa
 
 Host firefart
   HostName server.firefart.at

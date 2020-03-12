@@ -13,6 +13,13 @@ options = "metadata,umask=2,fmask=11"
 root = /
 ```
 
+## Change permissions after umask change
+```bash
+sudo chmod 0664 -R * # rw-rw-r--
+sudo find . -type d -exec chmod 0774 {} \; # rwxrwxr--
+sudo find . -type f -name *.sh -exec chmod 0774 {} \; # rwxrwxr--
+```
+
 ## Windows Terminal Config:
 ```json
 {
