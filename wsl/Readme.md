@@ -40,10 +40,9 @@ sudo find . -type f -name *.sh -exec chmod 0774 {} \; # rwxrwxr--
 ```bash
 export GPG_TTY=$(tty)
 export DOCKER_HOST=tcp://localhost:2375
-export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin
 export ANSIBLE_NOCOWS=1
 export GOPATH=$HOME/go
-
 function _update_ps1() {
     PS1="$($GOPATH/bin/powerline-go -path-aliases /c/Users/firefart/code=@CODE,/c/Users/firef/code=@CODE -error $?)"
 }
