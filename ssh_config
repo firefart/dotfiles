@@ -4,56 +4,50 @@ Host *
   #IdentityFile ~/.ssh/id_rsa
 
 Host firefart
-  HostName server.firefart.at
+  HostName firefart.firefart.at
+  User root
+
+Host bugbounty
+  HostName bugbounty.firefart.at
   User root
 
 Host work
   HostName work.firefart.at
   User root
-  Port 9989
 
 Host work2
   HostName work2.firefart.at
   User root
-  Port 9988
 
 Host wpvulndb
   HostName ssh.wpvulndb.com
   User root
-  Port 22
 
 Host wpscan
   HostName ssh.wpscan.io
   User root
-  Port 22
 
 Host pfsense
   HostName 10.0.0.1
   User root
-  Port 22
 
 Host switch
   HostName 10.0.0.2
   User admin
-  Port 22
 
 Host ap
   HostName 10.0.0.3
   User admin
-  Port 22
 
 Host cloudkey
   HostName 10.0.0.4
   User ubnt
-  Port 22
 
 Host nas
   HostName 10.0.0.5
   User admin
-  Port 22
 
 Host 192.168.*
   StrictHostKeyChecking no
   UserKnownHostsFile=/dev/null
   LogLevel=quiet
-
