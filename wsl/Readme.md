@@ -39,7 +39,6 @@ sudo find . -type f -name *.sh -exec chmod 0774 {} \; # rwxrwxr--
 ## Bashrc
 ```bash
 export GPG_TTY=$(tty)
-export DOCKER_HOST=tcp://localhost:2375
 export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin
 export ANSIBLE_NOCOWS=1
 export GOPATH=$HOME/go
