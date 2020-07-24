@@ -33,14 +33,9 @@ ln -fs "$BASEDIR/vim/plugins/" "${HOME}/.vim/pack/plugins/start"
 mkdir -p "${HOME}/.vim/colors"
 ln -fs "$BASEDIR/vim/colors/molokai/colors/molokai.vim" "${HOME}/.vim/colors/molokai.vim"
 
-# ssh
-mkdir -p "${HOME}/.ssh/"
-ln -fs "$BASEDIR/ssh_config" "${HOME}/.ssh/config"
-chmod 600 "${HOME}/.ssh/config"
-chown $USER "${HOME}/.ssh/config"
-
 # curl
 ln -fs "$BASEDIR/curlrc" "${HOME}/.curlrc"
 
 # inputrc
 ln -fs "$BASEDIR/inputrc" "${HOME}/.inputrc"
+
