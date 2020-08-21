@@ -28,6 +28,9 @@ else
   git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 fi
 
+ln -fs "$BASEDIR/zshrc" "${HOME}/.zshrc"
+ln -fs "$BASEDIR/p10k.zsh" "${HOME}/.p10k.zsh"
+
 # vim
 rm -rf "${HOME}/.vim/"
 mkdir -p "${HOME}/.vim/"
