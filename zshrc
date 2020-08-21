@@ -143,6 +143,8 @@ certprobe() {
         curl -s https://crt.sh/\?q\=\%.$1\&output\=json | jq -r '.[].name_value' | sed 's/\*\.//g' | sort -u | httprobe
 }
 
+[ -f .firefart.zshconfig ] && source .firefart.zshconfig
+
 if [[ "$TMUX" == "" ]] && [[ "$SSH_CONNECTION" != "" ]]; then
   tmux -2 new-session -A -d -s $USER
 fi
