@@ -19,6 +19,15 @@ fi
 ln -s -f "${HOME}/.tmux/.tmux.conf" "${HOME}/.tmux.conf"
 cp "${HOME}/.tmux/.tmux.conf.local" "${HOME}/.tmux.conf.local"
 
+# zsh
+if [ -d "${HOME}/.oh-my-zsh" ]; then
+  git -C "${HOME}/.oh-my-zsh/" pull -q
+  git -C "${HOME}/.oh-my-zsh/custom/themes/powerlevel10k" pull -q
+else
+  sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+  git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+fi
+
 # vim
 rm -rf "${HOME}/.vim/"
 mkdir -p "${HOME}/.vim/"
