@@ -1,9 +1,12 @@
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
+
+# Needs to be disabled for tmux autostart to work
+
+#if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+#  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+#fi
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
@@ -113,26 +116,26 @@ source $ZSH/oh-my-zsh.sh
 # Press CTRL+V followed by the key to see the code
 # Keypad
 # 0 . Enter
-bindkey -s "^[Op" "0"
-bindkey -s "^[On" "."
-bindkey -s "^[OM" "^M"
-# 1 2 3
-bindkey -s "^[Oq" "1"
-bindkey -s "^[Or" "2"
-bindkey -s "^[Os" "3"
-# 4 5 6
-bindkey -s "^[Ot" "4"
-bindkey -s "^[Ou" "5"
-bindkey -s "^[Ov" "6"
-# 7 8 9
-bindkey -s "^[Ow" "7"
-bindkey -s "^[Ox" "8"
-bindkey -s "^[Oy" "9"
-# / * - +
-bindkey -s "^[OQ" "/"
-bindkey -s "^[OR" "*"
-bindkey -s "^[OS" "-"
-bindkey -s "^[Ol" "+"
+# bindkey -s "^[Op" "0"
+# bindkey -s "^[On" "."
+# bindkey -s "^[OM" "^M"
+# # 1 2 3
+# bindkey -s "^[Oq" "1"
+# bindkey -s "^[Or" "2"
+# bindkey -s "^[Os" "3"
+# # 4 5 6
+# bindkey -s "^[Ot" "4"
+# bindkey -s "^[Ou" "5"
+# bindkey -s "^[Ov" "6"
+# # 7 8 9
+# bindkey -s "^[Ow" "7"
+# bindkey -s "^[Ox" "8"
+# bindkey -s "^[Oy" "9"
+# # / * - +
+# bindkey -s "^[OQ" "/"
+# bindkey -s "^[OR" "*"
+# bindkey -s "^[OS" "-"
+# bindkey -s "^[Ol" "+"
 
 export EDITOR='vim'
 
@@ -141,10 +144,5 @@ certprobe() {
 }
 
 if [[ "$TMUX" == "" ]] && [[ "$SSH_CONNECTION" != "" ]]; then
-  WHOAMI=$(whoami)
-  if tmux has-session -t $WHOAMI 2>/dev/null; then
-    tmux -2 attach-session -t $WHOAMI
-  else
-    tmux -2 new-session -s $WHOAMI
-  fi
+  tmux -2 new-session -A -d -s $USER
 fi
