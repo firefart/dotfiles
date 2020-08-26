@@ -16,9 +16,7 @@
       "closeOnExit": true,
       "backgroundImage": "C:\\Users\\firefart\\OneDrive\\Pictures\\polygon.jfif",
       "backgroundImageStretchMode": "uniformToFill",
-      "backgroundImageOpacity": 0.5,
-      "useAcrylic": true,
-      "acrylicOpacity": 0.5
+      "backgroundImageOpacity": 0.5
     },
     "list": [{
         "background": "#012456",
