@@ -14,7 +14,7 @@
       "historySize": 10000,
       "snapOnInput": true,
       "closeOnExit": true,
-      "backgroundImage": "C:\\Users\\firefart\\OneDrive\\Pictures\\polygon.jfif",
+      "backgroundImage": "%USERPROFILE%\\OneDrive\\Pictures\\polygon.jfif",
       "backgroundImageStretchMode": "uniformToFill",
       "backgroundImageOpacity": 0.5
     },
@@ -44,7 +44,7 @@
         "icon": "ms-appx:///ProfileIcons/{9acb9455-ca41-5af7-950f-6bca1bc9722f}.png",
         "name": "Ubuntu",
         "source": "Windows.Terminal.Wsl",
-        "startingDirectory": "%USERPROFILE%/code"
+        "startingDirectory": "\\\\wsl$\\Ubuntu\\home\\firefart\\code"
       },
       {
         "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
