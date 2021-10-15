@@ -20,22 +20,6 @@ sudo find . -type d -exec chmod 0774 {} \; # rwxrwxr--
 sudo find . -type f -name *.sh -exec chmod 0774 {} \; # rwxrwxr--
 ```
 
-## Windows Terminal Config:
-```json
-{
-    "closeOnExit" : true,
-    "fontFace" : "Cascadia Code PL",
-    "fontSize" : 10,
-    "guid" : "{2c4de342-38b7-51cf-b940-2309a097f518}",
-    "hidden": false,
-    "historySize" : 9001,
-    "icon" : "ms-appx:///ProfileIcons/{9acb9455-ca41-5af7-950f-6bca1bc9722f}.png",
-    "name" : "Ubuntu",
-    "source": "Windows.Terminal.Wsl",
-    "startingDirectory" : "%USERPROFILE%/code"
-}
-```
-
 ## Bashrc
 ```bash
 export GPG_TTY=$(tty)
