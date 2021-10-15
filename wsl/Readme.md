@@ -2,7 +2,7 @@
 
 ## Setup
 - Install Fonts: https://github.com/microsoft/cascadia-code/releases
-- Install powerline-go: `go get -u github.com/justjanne/powerline-go`
+- Install powerline-go: `go install github.com/justjanne/powerline-go@latest`
 
 ## /etc/wsl.conf
 ```
