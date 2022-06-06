@@ -1,0 +1,7 @@
+Host firefart
+  HostName firefart.firefart.at
+  User root
+
+Host bugbounty
+  HostName bugbounty.firefart.at
+  User root
