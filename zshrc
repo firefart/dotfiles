@@ -143,7 +143,7 @@ certprobe() {
         curl -s https://crt.sh/\?q\=\%.$1\&output\=json | jq -r '.[].name_value' | sed 's/\*\.//g' | sort -u | httprobe
 }
 
-export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin:$HOME/.local/bin/
+export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin:$HOME/.local/bin/:$HOME/.cargo/bin
 export ANSIBLE_NOCOWS=1
 export GOPATH=$HOME/go
 export DOTNET_CLI_TELEMETRY_OPTOUT=1
@@ -153,3 +153,4 @@ export DOTNET_CLI_TELEMETRY_OPTOUT=1
 if [[ "$TMUX" == "" ]] && [[ "$SSH_CONNECTION" != "" ]]; then
   tmux -2 new-session -A -d -s $USER
 fi
+
