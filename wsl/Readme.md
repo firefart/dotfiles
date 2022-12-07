@@ -28,3 +28,9 @@ export ANSIBLE_NOCOWS=1
 export GOPATH=$HOME/go
 export DOTNET_CLI_TELEMETRY_OPTOUT=1
 ```
+
+## Terminal Config
+
+```powershell
+New-Item -ItemType SymbolicLink -Path "$env:LOCALAPPDATA\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json" -Target "$env:OneDrive\Personal Vault\settings.json" -Force
+```

@@ -138,11 +138,6 @@ source $ZSH/oh-my-zsh.sh
 # bindkey -s "^[Ol" "+"
 
 export EDITOR='vim'
-
-certprobe() {
-        curl -s https://crt.sh/\?q\=\%.$1\&output\=json | jq -r '.[].name_value' | sed 's/\*\.//g' | sort -u | httprobe
-}
-
 export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin:$HOME/.local/bin/:$HOME/.cargo/bin
 export ANSIBLE_NOCOWS=1
 export GOPATH=$HOME/go

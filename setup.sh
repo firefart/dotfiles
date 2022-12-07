@@ -50,7 +50,3 @@ ln -fs "$BASEDIR/curlrc" "${HOME}/.curlrc"
 
 # inputrc
 ln -fs "$BASEDIR/inputrc" "${HOME}/.inputrc"
-
-# ssh config
-mkdir -p "${HOME}/.ssh/"
-ln -fs "$BASEDIR/ssh_config" "${HOME}/.ssh/config"
