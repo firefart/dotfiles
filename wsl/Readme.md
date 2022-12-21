@@ -31,6 +31,8 @@ export DOTNET_CLI_TELEMETRY_OPTOUT=1
 
 ## Terminal Config
 
+Run as Admin
+
 ```powershell
-New-Item -ItemType SymbolicLink -Path "$env:LOCALAPPDATA\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json" -Target "$env:OneDrive\Personal Vault\settings.json" -Force
+New-Item -ItemType SymbolicLink -Path "$env:LOCALAPPDATA\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json" -Target "$env:OneDrive\Documents\TerminalConfig\settings.json" -Force
 ```
