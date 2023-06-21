@@ -145,7 +145,7 @@ export DOTNET_CLI_TELEMETRY_OPTOUT=1
 
 [ -f ~/.firefart.zshconfig ] && source ~/.firefart.zshconfig
 
-if [[ "$TMUX" == "" ]] && [[ "$SSH_CONNECTION" != "" ]]; then
-  tmux -2 new-session -A -d -s $USER
+if [ -z "$TMUX" ] && [[ "$SSH_CONNECTION" != "" ]]; then
+      tmux attach -t default || tmux new -s default
 fi
 
