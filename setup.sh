@@ -24,7 +24,7 @@ if [ -d "${HOME}/.oh-my-zsh" ]; then
   git -C "${HOME}/.oh-my-zsh/" pull -q
   git -C "${HOME}/.oh-my-zsh/custom/themes/powerlevel10k" pull -q
 else
-  sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+  sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
   git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 fi
 
