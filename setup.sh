@@ -22,13 +22,25 @@ cp "${HOME}/.tmux/.tmux.conf.local" "${HOME}/.tmux.conf.local"
 # zsh
 if [ -d "${HOME}/.oh-my-zsh" ]; then
   git -C "${HOME}/.oh-my-zsh/" pull -q
-  git -C "${HOME}/.oh-my-zsh/custom/themes/powerlevel10k" pull -q
-  git -C "${HOME}/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting" pull -q
-  git -C "${HOME}/.oh-my-zsh/custom/plugins/zsh-autosuggestions" pull -q
 else
   sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+fi
+
+if [ -d "${HOME}/.oh-my-zsh/custom/themes/powerlevel10k" ]; then
+  git -C "${HOME}/.oh-my-zsh/custom/themes/powerlevel10k" pull -q
+else
   git clone https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+fi
+
+if [ -d "${HOME}/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting" ]; then
+  git -C "${HOME}/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting" pull -q
+else
   git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+fi
+
+if [ -d "${HOME}/.oh-my-zsh/custom/plugins/zsh-autosuggestions" ]; then
+  git -C "${HOME}/.oh-my-zsh/custom/plugins/zsh-autosuggestions" pull -q
+else
   git clone https://github.com/zsh-users/zsh-autosuggestions.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 fi
 
