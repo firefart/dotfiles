@@ -38,26 +38,26 @@
     - ~/.vim/colors
 
 - git:
-  "~/.vim/plugins/start/lightline.vim":
-    url: "https://github.com/itchyny/lightline.vim"
-  "~/.vim/plugins/start/supertab":
-    url: "https://github.com/ervandew/supertab"
-  "~/.vim/plugins/start/nerdcommenter":
-    url: "https://github.com/scrooloose/nerdcommenter"
-  "~/.vim/plugins/start/ctrlp.vim":
-    url: "https://github.com/ctrlpvim/ctrlp.vim"
-  "~/.vim/plugins/start/vim-nerdtree-tabs":
-    url: "https://github.com/jistr/vim-nerdtree-tabs"
-  "~/.vim/plugins/start/vim-buffergator":
-    url: "https://github.com/jeetsukumaran/vim-buffergator"
-  "~/.vim/plugins/start/nerdtree":
-    url: "https://github.com/scrooloose/nerdtree"
-  "~/.vim/colors/molokai":
-    url: "https://github.com/tomasr/molokai"
+    "~/.vim/plugins/start/lightline.vim":
+      url: "https://github.com/itchyny/lightline.vim"
+    "~/.vim/plugins/start/supertab":
+      url: "https://github.com/ervandew/supertab"
+    "~/.vim/plugins/start/nerdcommenter":
+      url: "https://github.com/scrooloose/nerdcommenter"
+    "~/.vim/plugins/start/ctrlp.vim":
+      url: "https://github.com/ctrlpvim/ctrlp.vim"
+    "~/.vim/plugins/start/vim-nerdtree-tabs":
+      url: "https://github.com/jistr/vim-nerdtree-tabs"
+    "~/.vim/plugins/start/vim-buffergator":
+      url: "https://github.com/jeetsukumaran/vim-buffergator"
+    "~/.vim/plugins/start/nerdtree":
+      url: "https://github.com/scrooloose/nerdtree"
+    "~/.vim/colors/molokai":
+      url: "https://github.com/tomasr/molokai"
 
 - link:
     ~/.vim/vimrc: vimrc
-    ~/.vim/colors/molokai.vim: ~/.vim/colors/molokai/colors/molokai.vim
+    ~/.vim/colors/molokai.vim: ~/.vim/colors/molokai/colors/molokai.vim # can't clone the color directly
 
 - shell:
     - [sudo chsh -s $(which zsh), Change shell to zsh]
