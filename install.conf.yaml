@@ -1,0 +1,63 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ["~"]
+
+- shell:
+    - [git submodule update --init --recursive, Installing submodules]
+
+- git:
+    "~/.tmux":
+      url: "https://github.com/gpakosz/.tmux"
+      description: "oh my tmux"
+    "~/.oh-my-zsh":
+      url: "https://github.com/ohmyzsh/ohmyzsh"
+      description: "ohmyzsh"
+    "~/.oh-my-zsh/custom/themes/powerlevel10k":
+      url: "https://github.com/romkatv/powerlevel10k"
+      description: "powerlevel 1ok"
+    "~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting":
+      url: "https://github.com/zsh-users/zsh-syntax-highlighting"
+      description: "zsh-syntax-highlighting"
+    "~/.oh-my-zsh/custom/plugins/zsh-autosuggestions":
+      url: "https://github.com/zsh-users/zsh-autosuggestions"
+      description: "zsh-autosuggestions"
+
+- link:
+    ~/.tmux.conf: ~/.tmux/.tmux.conf
+    ~/.tmux.conf.local: tmux.conf.local
+    ~/.zshrc: zshrc
+    ~/.p10k.zsh: p10k.zsh
+    ~/.curlrc: curlrc
+
+# VIM config
+- create:
+    - ~/.vim
+    - ~/.vim/pack/plugins/start
+    - ~/.vim/colors
+
+- git:
+  "~/.vim/plugins/start/lightline.vim":
+    url: "https://github.com/itchyny/lightline.vim"
+  "~/.vim/plugins/start/supertab":
+    url: "https://github.com/ervandew/supertab"
+  "~/.vim/plugins/start/nerdcommenter":
+    url: "https://github.com/scrooloose/nerdcommenter"
+  "~/.vim/plugins/start/ctrlp.vim":
+    url: "https://github.com/ctrlpvim/ctrlp.vim"
+  "~/.vim/plugins/start/vim-nerdtree-tabs":
+    url: "https://github.com/jistr/vim-nerdtree-tabs"
+  "~/.vim/plugins/start/vim-buffergator":
+    url: "https://github.com/jeetsukumaran/vim-buffergator"
+  "~/.vim/plugins/start/nerdtree":
+    url: "https://github.com/scrooloose/nerdtree"
+  "~/.vim/colors/molokai":
+    url: "https://github.com/tomasr/molokai"
+
+- link:
+    ~/.vim/vimrc: vimrc
+    ~/.vim/colors/molokai.vim: ~/.vim/colors/molokai/colors/molokai.vim
+
+- shell:
+    - [sudo chsh -s $(which zsh), Change shell to zsh]

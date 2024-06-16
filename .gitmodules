@@ -1,32 +1,7 @@
-[submodule "vim/colors/molokai"]
-	path = vim/colors/molokai
-	url = https://github.com/tomasr/molokai.git
-  ignore = dirty
-[submodule "vim/plugins/lightline.vim"]
-	path = vim/plugins/lightline.vim
-  url = https://github.com/itchyny/lightline.vim.git
-  ignore = dirty
-[submodule "vim/plugins/supertab"]
-	path = vim/plugins/supertab
-  url = https://github.com/ervandew/supertab.git
-  ignore = dirty
-[submodule "vim/plugins/nerdcommenter"]
-	path = vim/plugins/nerdcommenter
-  url = https://github.com/scrooloose/nerdcommenter.git
-  ignore = dirty
-[submodule "vim/plugins/ctrlp.vim"]
-	path = vim/plugins/ctrlp.vim
-  url = https://github.com/ctrlpvim/ctrlp.vim.git
-  ignore = dirty
-[submodule "vim/plugins/vim-nerdtree-tabs"]
-	path = vim/plugins/vim-nerdtree-tabs
-  url = https://github.com/jistr/vim-nerdtree-tabs.git
-  ignore = dirty
-[submodule "vim/plugins/vim-buffergator"]
-	path = vim/plugins/vim-buffergator
-  url = https://github.com/jeetsukumaran/vim-buffergator.git
-  ignore = dirty
-[submodule "vim/plugins/nerdtree"]
-	path = vim/plugins/nerdtree
-  url = https://github.com/scrooloose/nerdtree.git
-  ignore = dirty
+[submodule "dotbot"]
+	path = dotbot
+	url = https://github.com/anishathalye/dotbot
+	ignore = dirty
+[submodule "dotbot-git"]
+	path = dotbot-git
+	url = https://github.com/DrDynamic/dotbot-git.git
