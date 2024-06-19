@@ -7,6 +7,17 @@
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
 
+# neovim
+- shell:
+    - [curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux64.tar.gz, download new neovim]
+    - [sudo rm -rf /opt/nvim-linux64, remove old neovim]
+    - [sudo tar -C /opt -xzf nvim-linux64.tar.gz, install new neovim]
+    - [rm -rf nvim-linux64.tar.gz, remove neowin download]
+- git:
+    "~/.config/nvim":
+      url: https://github.com/nvim-lua/kickstart.nvim
+      description: "nvim kickstart"
+
 - git:
     "~/.tmux":
       url: "https://github.com/gpakosz/.tmux"
