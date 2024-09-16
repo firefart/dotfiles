@@ -47,11 +47,14 @@ zstyle ':omz:update' mode auto
 # bindkey -s "^[OS" "-"
 # bindkey -s "^[Ol" "+"
 
-export EDITOR='vim'
+export EDITOR='nvim'
 export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin:$HOME/.local/bin/:$HOME/.cargo/bin:/opt/nvim-linux64/bin
 export ANSIBLE_NOCOWS=1
 export GOPATH=$HOME/go
 export DOTNET_CLI_TELEMETRY_OPTOUT=1
+
+alias vim="nvim"
+alias vi="nvim"
 
 if [ -x "$(command -v exa)" ]; then
     alias ls="exa --icons"
