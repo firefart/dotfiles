@@ -22,7 +22,10 @@
       description: "nvim kickstart"
 
 - shell:
-    - [nvim --headless "+Lazy! sync" +qa, Update neovim plugins]
+    - [
+        /opt/nvim-linux64/bin/nvim --headless "+Lazy! sync" +qa,
+        Update neovim plugins,
+      ]
 
 - git:
     "~/.tmux":
