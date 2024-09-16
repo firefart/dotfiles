@@ -21,6 +21,7 @@
       url: https://github.com/nvim-lua/kickstart.nvim
       description: "nvim kickstart"
 
+# we have no path setup at this point so use the full path when calling nvim
 - shell:
     - [
         /opt/nvim-linux64/bin/nvim --headless "+Lazy! sync" +qa,
