@@ -6,6 +6,3 @@
 	path = dotbot-git
 	url = https://github.com/DrDynamic/dotbot-git.git
 	ignore = dirty
-[submodule "dotbot-ifarch"]
-	path = dotbot-ifarch
-	url = https://github.com/ryansch/dotbot-ifarch.git
