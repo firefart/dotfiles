@@ -26,7 +26,7 @@
             get build dependencies,
           ]
         - [
-            git clone --single-branch -b stable https://github.com/neovim/neovim /opt/neovim-git,
+            git -C "/opt/neovim-git" pull || git clone --single-branch -b stable https://github.com/neovim/neovim /opt/neovim-git,
             clone git repo,
           ]
         - [
