@@ -20,9 +20,18 @@
 # neovim arm (no prebuilt package available, buile from source)
 - ifaarch64:
     - shell:
-        - [sudo apt update && sudo apt install -y git ninja-build gettext cmake unzip curl build-essential, get build dependencies]
-        - [git clone --single-branch -b stable https://github.com/neovim/neovim /opt/neovim-git, clone git repo]
-        - [cd /opt/neovim-git && make CMAKE_INSTALL_PREFIX=/opt/neovim CMAKE_BUILD_TYPE=RelWithDebInfo, build neovim]
+        - [
+            sudo apt update && sudo apt install -y git ninja-build gettext cmake unzip curl build-essential,
+            get build dependencies,
+          ]
+        - [
+            git clone --single-branch -b stable https://github.com/neovim/neovim /opt/neovim-git,
+            clone git repo,
+          ]
+        - [
+            cd /opt/neovim-git && make CMAKE_INSTALL_PREFIX=/opt/neovim CMAKE_BUILD_TYPE=RelWithDebInfo,
+            build neovim,
+          ]
         - [sudo make install, install neovim]
 
 - git:
