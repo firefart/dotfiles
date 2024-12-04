@@ -16,6 +16,7 @@
           ]
         - [sudo rm -rf /opt/nvim-linux64, remove old neovim]
         - [sudo tar -C /opt -xzf nvim-linux64.tar.gz, install new neovim]
+        - [sudo mv /opt/nvim-linux64 /opt/neovim, move install directory]
         - [rm -rf nvim-linux64.tar.gz, remove neowin download]
 # neovim arm (no prebuilt package available, buile from source)
 - ifaarch64:
@@ -41,10 +42,7 @@
 
 # we have no path setup at this point so use the full path when calling nvim
 - shell:
-    - [
-        /opt/nvim-linux64/bin/nvim --headless "+Lazy! sync" +qa,
-        Update neovim plugins,
-      ]
+    - [/opt/neovim/bin/nvim --headless "+Lazy! sync" +qa, Update neovim plugins]
 
 - git:
     "~/.tmux":

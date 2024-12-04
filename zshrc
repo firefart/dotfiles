@@ -48,7 +48,7 @@ zstyle ':omz:update' mode auto
 # bindkey -s "^[Ol" "+"
 
 export EDITOR='nvim'
-export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin:$HOME/.local/bin/:$HOME/.cargo/bin:/opt/nvim-linux64/bin
+export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin:$HOME/.local/bin/:$HOME/.cargo/bin:/opt/neovim/bin
 export ANSIBLE_NOCOWS=1
 export GOPATH=$HOME/go
 export DOTNET_CLI_TELEMETRY_OPTOUT=1
