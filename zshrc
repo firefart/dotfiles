@@ -61,6 +61,9 @@ if [ -x "$(command -v exa)" ]; then
     alias ll='exa -lhaF --icons'
 fi
 
+# single quotes because of $PWD!!
+alias gitupdateall='find . -mindepth 1 -maxdepth 1 -type d -exec git --git-dir={}/.git --work-tree=$PWD/{} pull \;'
+
 [ -f ~/.firefart.zshconfig ] && source ~/.firefart.zshconfig
 
 if [ -z "$TMUX" ] && [[ "$SSH_CONNECTION" != "" ]]; then
