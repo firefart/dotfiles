@@ -56,9 +56,9 @@ export DOTNET_CLI_TELEMETRY_OPTOUT=1
 alias vim="nvim"
 alias vi="nvim"
 
-if [ -x "$(command -v exa)" ]; then
-    alias ls="exa --icons"
-    alias ll='exa -lhaF --icons'
+if [ -x "$(command -v eza)" ]; then
+    alias ls="eza --icons"
+    alias ll='eza -lhaF --icons'
 fi
 
 # single quotes because of $PWD!!
