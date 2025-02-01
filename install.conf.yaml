@@ -21,14 +21,30 @@
 # neovim arm64
 - ifaarch64:
     - shell:
+        # the prebuilt arm image defends on GLIBC_2.38 which is not available on debian12 so do a manual install
+        # - [
+        #     curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux-arm64.tar.gz,
+        #     download new neovim,
+        #   ]
+        # - [sudo rm -rf /opt/nvim-linux-arm64 /opt/neovim, remove old neovim]
+        # - [sudo tar -C /opt -xzf nvim-linux-arm64.tar.gz, extract new neovim]
+        # - [sudo mv /opt/nvim-linux-arm64 /opt/neovim, move install directory]
+        # - [rm -rf nvim-linux-arm64.tar.gz, remove neowin download]
         - [
-            curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux-arm64.tar.gz,
-            download new neovim,
+            sudo apt update && sudo apt install -y git ninja-build gettext cmake unzip curl build-essential,
+            get build dependencies,
           ]
-        - [sudo rm -rf /opt/nvim-linux-arm64 /opt/neovim, remove old neovim]
-        - [sudo tar -C /opt -xzf nvim-linux-arm64.tar.gz, extract new neovim]
-        - [sudo mv /opt/nvim-linux-arm64 /opt/neovim, move install directory]
-        - [rm -rf nvim-linux-arm64.tar.gz, remove neowin download]
+        - [
+            git -C "/opt/neovim-git" pull || git clone --single-branch -b stable https://github.com/neovim/neovim /opt/neovim-git,
+            clone git repo,
+          ]
+        - [
+            cd /opt/neovim-git && make CMAKE_INSTALL_PREFIX=/opt/neovim CMAKE_BUILD_TYPE=RelWithDebInfo,
+            build neovim,
+          ]
+        - [
+            cd /opt/neovim-git && sudo make install, install neovim
+          ]
 
 - git:
     "~/.config/nvim":
