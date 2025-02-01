@@ -14,8 +14,8 @@
             curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.tar.gz,
             download new neovim,
           ]
-        - [sudo rm -rf /opt/nvim-linux-x86_64, remove old neovim]
-        - [sudo tar -C /opt -xzf nvim-linux-x86_64.tar.gz, install new neovim]
+        - [sudo rm -rf /opt/nvim-linux-x86_64 /opt/neovim, remove old neovim]
+        - [sudo tar -C /opt -xzf nvim-linux-x86_64.tar.gz, extract new neovim]
         - [sudo mv /opt/nvim-linux-x86_64 /opt/neovim, move install directory]
         - [rm -rf nvim-linux-x86_64.tar.gz, remove neowin download]
 # neovim arm64
@@ -25,8 +25,8 @@
             curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux-arm64.tar.gz,
             download new neovim,
           ]
-        - [sudo rm -rf /opt/nvim-linux-arm64, remove old neovim]
-        - [sudo tar -C /opt -xzf nvim-linux-arm64.tar.gz, install new neovim]
+        - [sudo rm -rf /opt/nvim-linux-arm64 /opt/neovim, remove old neovim]
+        - [sudo tar -C /opt -xzf nvim-linux-arm64.tar.gz, extract new neovim]
         - [sudo mv /opt/nvim-linux-arm64 /opt/neovim, move install directory]
         - [rm -rf nvim-linux-arm64.tar.gz, remove neowin download]
 
