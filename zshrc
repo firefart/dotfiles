@@ -11,6 +11,7 @@ plugins=(
   zsh-syntax-highlighting
   zsh-autosuggestions
   ssh-agent
+  toolbox
 )
 
 source $ZSH/oh-my-zsh.sh
