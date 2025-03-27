@@ -34,9 +34,8 @@
             sudo apt update && sudo apt install -y git ninja-build gettext cmake unzip curl build-essential,
             get build dependencies,
           ]
-        - [sudo rm -rf /opt/neovim-git, remove old neovim]
         - [
-            git clone --single-branch -b stable https://github.com/neovim/neovim /opt/neovim-git,
+            ( git -C "/opt/neovim-git" reset --hard HEAD && git -C "/opt/neovim-git" checkout stable && git -C "/opt/neovim-git" pull ) || git clone --single-branch -b stable https://github.com/neovim/neovim /opt/neovim-git,
             clone git repo,
           ]
         - [
