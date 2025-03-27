@@ -35,16 +35,14 @@
             get build dependencies,
           ]
         - [
-            git -C "/opt/neovim-git" pull || git clone --single-branch -b stable https://github.com/neovim/neovim /opt/neovim-git,
+            ( git -C "/opt/neovim-git" pull && git -C "/opt/neovim-git" checkout stable ) || git clone --single-branch -b stable https://github.com/neovim/neovim /opt/neovim-git,
             clone git repo,
           ]
         - [
             cd /opt/neovim-git && make CMAKE_INSTALL_PREFIX=/opt/neovim CMAKE_BUILD_TYPE=RelWithDebInfo,
             build neovim,
           ]
-        - [
-            cd /opt/neovim-git && sudo make install, install neovim
-          ]
+        - [cd /opt/neovim-git && sudo make install, install neovim]
 
 - git:
     "~/.config/nvim":
