@@ -53,6 +53,11 @@
 - shell:
     - [/opt/neovim/bin/nvim --headless "+Lazy! sync" +qa, Update neovim plugins]
 
+# bat setup
+- shell:
+    - [mkdir -p ~/.local/bin, Create local bin directory]
+    - [ln -s /usr/bin/batcat ~/.local/bin/bat, Create symlink for batcat->bat]
+
 - git:
     "~/.tmux":
       url: "https://github.com/gpakosz/.tmux"
