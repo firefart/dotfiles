@@ -56,7 +56,7 @@
 # bat setup
 - shell:
     - [mkdir -p ~/.local/bin, Create local bin directory]
-    - [ln -s /usr/bin/batcat ~/.local/bin/bat, Create symlink for batcat->bat]
+    - [ln -fs /usr/bin/batcat ~/.local/bin/bat, Create symlink for batcat->bat]
 
 - git:
     "~/.tmux":
