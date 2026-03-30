@@ -39,7 +39,7 @@
             clone git repo,
           ]
         - [
-            cd /opt/neovim-git && make CMAKE_INSTALL_PREFIX=/opt/neovim CMAKE_BUILD_TYPE=RelWithDebInfo,
+            cd /opt/neovim-git && make clean && make CMAKE_INSTALL_PREFIX=/opt/neovim CMAKE_BUILD_TYPE=RelWithDebInfo,
             build neovim,
           ]
         - [cd /opt/neovim-git && sudo make install, install neovim]
