@@ -83,4 +83,5 @@
     ~/.curlrc: curlrc
 
 - shell:
+    - [sudo apt-get -y update && sudo apt-get -y install zsh]
     - [sudo chsh -s $(which zsh), Change shell to zsh]
