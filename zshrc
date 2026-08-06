@@ -53,6 +53,7 @@ export PATH=$HOME/.local/bin:/usr/local/go/bin:$HOME/go/bin:$HOME/.cargo/bin:/op
 export ANSIBLE_NOCOWS=1
 export GOPATH=$HOME/go
 export DOTNET_CLI_TELEMETRY_OPTOUT=1
+export CLAUDE_CODE_DISABLE_MOUSE=1
 
 alias vim="nvim"
 alias vi="nvim"
