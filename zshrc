@@ -63,8 +63,15 @@ if [ -x "$(command -v eza)" ]; then
     alias ll='eza -lhaF --icons'
 fi
 
-# single quotes because of $PWD!!
-alias gitupdateall='find . -mindepth 1 -maxdepth 1 -type d -exec git --git-dir={}/.git --work-tree=$PWD/{} pull \;'
+gitupdateall() {
+    find . -type d -name .git -prune -print0 |
+        while IFS= read -r -d '' gitdir; do
+            repo="${gitdir%/.git}"
+
+            printf '\n==> %s\n' "$repo"
+            git -C "$repo" pull
+        done
+}
 
 [ -f ~/.firefart.zshconfig ] && source ~/.firefart.zshconfig
 
