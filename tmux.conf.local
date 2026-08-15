@@ -455,6 +455,9 @@ tmux_conf_uninstall_plugins_on_reload=true
 
 # ------------------------------------------------------------------------------
 
+# allow clipboard
+set -g allow-passthrough on
+
 # # /!\ do not remove the following line
 # EOF
 #
