@@ -73,6 +73,12 @@ gitupdateall() {
         done
 }
 
+updateall() {
+	sudo apt -y update && sudo apt -y full-upgrade && sudo apt -y autoremove
+	claude update
+	codex update
+}
+
 [ -f ~/.firefart.zshconfig ] && source ~/.firefart.zshconfig
 
 if [ -z "$TMUX" ] && [[ "$SSH_CONNECTION" != "" ]]; then
