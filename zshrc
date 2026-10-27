@@ -74,13 +74,21 @@ gitupdateall() {
 }
 
 updateall() {
-	sudo apt -y update && sudo apt -y full-upgrade && sudo apt -y autoremove
-	claude update
-	codex update
+    if command -v apt >/dev/null 2>&1; then
+        sudo apt -y update && sudo apt -y full-upgrade && sudo apt -y autoremove
+    elif command -v dnf >/dev/null 2>&1; then
+        sudo dnf -y upgrade --refresh && sudo dnf -y autoremove
+    else
+        echo "updateall: no supported package manager (apt/dnf) found" >&2
+        return 1
+    fi
+
+    command -v claude >/dev/null 2>&1 && claude update
+    command -v codex  >/dev/null 2>&1 && codex update
 }
 
 [ -f ~/.firefart.zshconfig ] && source ~/.firefart.zshconfig
 
 if [ -z "$TMUX" ] && [[ "$SSH_CONNECTION" != "" ]]; then
-      tmux attach -t default || tmux new -s default
+    tmux attach -t default || tmux new -s default
 fi
