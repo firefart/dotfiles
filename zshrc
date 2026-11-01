@@ -85,6 +85,7 @@ updateall() {
 
     command -v claude >/dev/null 2>&1 && claude update
     command -v codex  >/dev/null 2>&1 && codex update
+    command -v gup  >/dev/null 2>&1 && gup update
 }
 
 [ -f ~/.firefart.zshconfig ] && source ~/.firefart.zshconfig
